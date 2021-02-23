@@ -11,6 +11,7 @@ namespace TemporaryDirectory.Tests
         {
             this.DeleteDirectory(Directory.GetCurrentDirectory() + "/temp_folder");
             this.DeleteDirectory(Path.GetTempPath() + "/testing_folder");
+            this.DeleteDirectory(Path.GetTempPath() + "/testing_folder_1");
         }
 
         [Fact]
