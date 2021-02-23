@@ -24,40 +24,40 @@ $ Install-Package TemporaryDirectory
 ### Creating temporary directory
 To create a temporary directory at the system temporary directory call the create method:
 
-```
+```c#
 TemporaryDirectoryHandler directory = new TemporaryDirectoryHandler().Create();
 ```
 
 ### Naming temporary directory
 To create a temporary directory with a specific name:
 
-```
+```c#
 TemporaryDirectoryHandler directory = new TemporaryDirectoryHandler().SetName("MyFolder").Create();
 ```
 
 ### Force creating temporary directory
 In case the directory already exists you can force create the directory. It will delete the old folder and create the directory againg:
 
-```
+```c#
 TemporaryDirectoryHandler directory = new TemporaryDirectoryHandler().SetName("MyFolder").SetForce(true).Create();
 ```
 
 ### Creating temporary directory a custom location
 If you wise to create the folder at another location you can specify this in the constructor:
 
-```
+```c#
 TemporaryDirectoryHandler directory = new TemporaryDirectoryHandler(location).Create();
 ```
 
 ### Retrive the path of the temporary directory
 You can use the method GetPath to either get the path of the directory or a specific file:
 
-```
+```c#
 TemporaryDirectoryHandler directory = new TemporaryDirectoryHandler().Create();
 string path = directory.GetPath();
 ```
 
-```
+```c#
 TemporaryDirectoryHandler directory = new TemporaryDirectoryHandler().Create();
 string path = directory.GetPath("my-file.txt");
 ```
@@ -65,7 +65,7 @@ string path = directory.GetPath("my-file.txt");
 ### Empty temporary directory 
 You can empty a directory with method Empty:
 
-```
+```c#
 TemporaryDirectoryHandler directory = new TemporaryDirectoryHandler().Create();
 directory.Empty();
 ```
@@ -73,11 +73,10 @@ directory.Empty();
 ### Delete temporary directory
 You can delete a directory with method Empty:
 
-```
+```c#
 TemporaryDirectoryHandler directory = new TemporaryDirectoryHandler().Create();
 bool result = directory.Delete();
 ```
-
 
 ## 🤼 How to Contribute
 
