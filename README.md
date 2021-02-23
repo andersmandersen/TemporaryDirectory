@@ -2,7 +2,7 @@
 
 <p align="center">⚡ Working with temporary directory made easy ☕️</p>
 
-**Temporary Directory ** is a simple to work with temporary directory for .Net Core developers.
+**Temporary Directory ** is a simple class to work with temporary directory for .Net Core developers.
 
 
 ## 🔧 Installation
