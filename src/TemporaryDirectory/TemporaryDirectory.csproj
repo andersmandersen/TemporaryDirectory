@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <Authors>andersmandersen</Authors>
-    <PackageVersion>0.0.1</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
     <RepositoryUrl>https://github.com/andersmandersen/TemporaryDirectory</RepositoryUrl>
     <PackageProjectUrl>https://github.com/andersmandersen/TemporaryDirectory</PackageProjectUrl>
     <Description>Working with temporary directory made easy</Description>
